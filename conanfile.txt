@@ -1,5 +1,6 @@
 [requires]
 openssl/3.0.1
+cpp-httplib/0.10.1
 
 [generators]
 deploy

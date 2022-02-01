@@ -7,6 +7,7 @@
     os=Linux
 
 [requires]
+    cpp-httplib/0.10.1
     openssl/3.Y.Z
 
 [options]
@@ -23,10 +24,14 @@
     os_build=Linux
 
 [full_requires]
+    cpp-httplib/0.10.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
     openssl/3.0.1:f99afdbf2a1cc98ba2029817b35103455b6a9b77
     zlib/1.2.11:6af9cc7cb931c5ad942174fd7838eb655717c709
 
 [full_options]
+    cpp-httplib:with_brotli=False
+    cpp-httplib:with_openssl=False
+    cpp-httplib:with_zlib=False
     openssl:386=False
     openssl:enable_weak_ssl_ciphers=False
     openssl:fPIC=True

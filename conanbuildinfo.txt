@@ -1,21 +1,24 @@
 [includedirs]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/include
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/include
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/httplib
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include
 
 [libdirs]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/lib
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/lib
 
 [bindirs]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/bin
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/bin
 
 [resdirs]
 
 
 [builddirs]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib/cmake
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib/cmake
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/
 
 [libs]
 ssl
@@ -24,8 +27,8 @@ z
 
 [system_libs]
 dl
-pthread
 rt
+pthread
 
 [defines]
 
@@ -56,20 +59,20 @@ rt
 
 
 [includedirs_openssl]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/include
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/include
 
 [libdirs_openssl]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib
 
 [bindirs_openssl]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/bin
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/bin
 
 [resdirs_openssl]
 
 
 [builddirs_openssl]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib/cmake
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77/lib/cmake
 
 [libs_openssl]
 ssl
@@ -108,7 +111,7 @@ rt
 
 
 [rootpath_openssl]
-/home/michael/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77
+/root/.conan/data/openssl/3.0.1/_/_/package/f99afdbf2a1cc98ba2029817b35103455b6a9b77
 
 [name_openssl]
 openssl
@@ -124,11 +127,77 @@ cmake_find_package_multi=OpenSSL
 
 
 
+[includedirs_cpp-httplib]
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/httplib
+
+[libdirs_cpp-httplib]
+
+
+[bindirs_cpp-httplib]
+
+
+[resdirs_cpp-httplib]
+
+
+[builddirs_cpp-httplib]
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/
+
+[libs_cpp-httplib]
+
+
+[system_libs_cpp-httplib]
+pthread
+
+[defines_cpp-httplib]
+
+
+[cppflags_cpp-httplib]
+
+
+[cxxflags_cpp-httplib]
+
+
+[cflags_cpp-httplib]
+
+
+[sharedlinkflags_cpp-httplib]
+
+
+[exelinkflags_cpp-httplib]
+
+
+[sysroot_cpp-httplib]
+
+
+[frameworks_cpp-httplib]
+
+
+[frameworkdirs_cpp-httplib]
+
+
+[rootpath_cpp-httplib]
+/root/.conan/data/cpp-httplib/0.10.1/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[name_cpp-httplib]
+cpp-httplib
+
+[version_cpp-httplib]
+0.10.1
+
+[generatornames_cpp-httplib]
+cmake_find_package=httplib
+cmake_find_package_multi=httplib
+
+[generatorfilenames_cpp-httplib]
+
+
+
 [includedirs_zlib]
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/include
 
 [libdirs_zlib]
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/lib
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/lib
 
 [bindirs_zlib]
 
@@ -137,7 +206,7 @@ cmake_find_package_multi=OpenSSL
 
 
 [builddirs_zlib]
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709/
 
 [libs_zlib]
 z
@@ -173,7 +242,7 @@ z
 
 
 [rootpath_zlib]
-/home/michael/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709
+/root/.conan/data/zlib/1.2.11/_/_/package/6af9cc7cb931c5ad942174fd7838eb655717c709
 
 [name_zlib]
 zlib
@@ -189,7 +258,9 @@ cmake_find_package_multi=ZLIB
 
 
 
+[USER_cpp-httplib]
 [USER_openssl]
 [USER_zlib]
 [ENV_openssl]
+[ENV_cpp-httplib]
 [ENV_zlib]

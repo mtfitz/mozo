@@ -1,6 +1,18 @@
 {
  "options": [
   [
+   "cpp-httplib:with_brotli",
+   "False"
+  ],
+  [
+   "cpp-httplib:with_openssl",
+   "False"
+  ],
+  [
+   "cpp-httplib:with_zlib",
+   "False"
+  ],
+  [
    "openssl:386",
    "False"
   ],

@@ -2,9 +2,10 @@
  "graph_lock": {
   "nodes": {
    "0": {
-    "options": "openssl:386=False\nopenssl:enable_weak_ssl_ciphers=False\nopenssl:fPIC=True\nopenssl:no_aria=False\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_blake2=False\nopenssl:no_camellia=False\nopenssl:no_cast=False\nopenssl:no_chacha=False\nopenssl:no_cms=False\nopenssl:no_comp=False\nopenssl:no_ct=False\nopenssl:no_deprecated=False\nopenssl:no_des=False\nopenssl:no_dgram=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_ec=False\nopenssl:no_ecdh=False\nopenssl:no_ecdsa=False\nopenssl:no_engine=False\nopenssl:no_filenames=False\nopenssl:no_fips=False\nopenssl:no_gost=False\nopenssl:no_idea=False\nopenssl:no_legacy=False\nopenssl:no_md2=False\nopenssl:no_md4=False\nopenssl:no_mdc2=False\nopenssl:no_ocsp=False\nopenssl:no_pinshared=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rfc3779=False\nopenssl:no_rmd160=False\nopenssl:no_seed=False\nopenssl:no_sm2=False\nopenssl:no_sm3=False\nopenssl:no_sm4=False\nopenssl:no_sock=False\nopenssl:no_srp=False\nopenssl:no_srtp=False\nopenssl:no_sse2=False\nopenssl:no_ssl=False\nopenssl:no_ssl3=False\nopenssl:no_stdio=False\nopenssl:no_threads=False\nopenssl:no_tls1=False\nopenssl:no_ts=False\nopenssl:no_whirlpool=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nzlib:fPIC=True\nzlib:shared=False",
+    "options": "cpp-httplib:with_brotli=False\ncpp-httplib:with_openssl=False\ncpp-httplib:with_zlib=False\nopenssl:386=False\nopenssl:enable_weak_ssl_ciphers=False\nopenssl:fPIC=True\nopenssl:no_aria=False\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_blake2=False\nopenssl:no_camellia=False\nopenssl:no_cast=False\nopenssl:no_chacha=False\nopenssl:no_cms=False\nopenssl:no_comp=False\nopenssl:no_ct=False\nopenssl:no_deprecated=False\nopenssl:no_des=False\nopenssl:no_dgram=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_ec=False\nopenssl:no_ecdh=False\nopenssl:no_ecdsa=False\nopenssl:no_engine=False\nopenssl:no_filenames=False\nopenssl:no_fips=False\nopenssl:no_gost=False\nopenssl:no_idea=False\nopenssl:no_legacy=False\nopenssl:no_md2=False\nopenssl:no_md4=False\nopenssl:no_mdc2=False\nopenssl:no_ocsp=False\nopenssl:no_pinshared=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rfc3779=False\nopenssl:no_rmd160=False\nopenssl:no_seed=False\nopenssl:no_sm2=False\nopenssl:no_sm3=False\nopenssl:no_sm4=False\nopenssl:no_sock=False\nopenssl:no_srp=False\nopenssl:no_srtp=False\nopenssl:no_sse2=False\nopenssl:no_ssl=False\nopenssl:no_ssl3=False\nopenssl:no_stdio=False\nopenssl:no_threads=False\nopenssl:no_tls1=False\nopenssl:no_ts=False\nopenssl:no_whirlpool=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nzlib:fPIC=True\nzlib:shared=False",
     "requires": [
-     "1"
+     "1",
+     "3"
     ],
     "path": "conanfile.txt",
     "context": "host"
@@ -23,6 +24,13 @@
     "ref": "zlib/1.2.11",
     "options": "fPIC=True\nshared=False",
     "package_id": "6af9cc7cb931c5ad942174fd7838eb655717c709",
+    "prev": "0",
+    "context": "host"
+   },
+   "3": {
+    "ref": "cpp-httplib/0.10.1",
+    "options": "with_brotli=False\nwith_openssl=False\nwith_zlib=False",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
     "prev": "0",
     "context": "host"
    }

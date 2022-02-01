@@ -1,11 +1,11 @@
 TARGETS = mozo
 
-CXXFILES = trackermanager
+CXXFILES = mozo trackermanager logger
 
 BINDIR := ./bin
 LIBDIR := ./lib
 OBJDIR := ./build
-INCDIR := ./include ./benc/include ./openssl/include
+INCDIR := ./include ./benc/include ./openssl/include ./cpp-httplib/include
 SRCDIR := ./src
 
 LINKDIR = ./benc/lib/ ./zlib/lib ./openssl/lib
@@ -23,8 +23,8 @@ LIBFILES =
 # dependency files
 DFILES = $(patsubst %.o, %.d, $(OFILES))
 
-CXXFLAGS = $(INC) -O3 -MMD -std=c++17 -Wall -Werror
-LDFLAGS = $(LINK) -lbenc -lcrypto -lz -pthread -ldl
+CXXFLAGS = $(INC) -O3 -MMD -std=c++17 -Wall #-Werror
+LDFLAGS = $(LINK) -lbenc -lssl -lcrypto -lz -pthread -ldl
 
 # make config
 .DEFAULT_GOAL = all
