@@ -1,0 +1,3 @@
+[submodule "benc"]
+	path = benc
+	url = https://github.com/mtfitz/benc.git
