@@ -13,11 +13,11 @@
 
 #define CONNECT_TIMEOUT 15
 #define CONNECTION_ID_EXPIRE 60
+#define LEN_PEER_ID 20
 
 class TrackerManager {
 private:
-    Host host;
-    std::string peer_id;
+    Connection<TCP> conn;
 
 public:
     TrackerManager(std::string url, uint16_t port);

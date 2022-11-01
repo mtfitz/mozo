@@ -2,7 +2,8 @@
 
 #include <string>
 
-enum LogType {
+enum LogType
+{
     NONE,
     WARNING,
     ERROR,
