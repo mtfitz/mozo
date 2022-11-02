@@ -7,14 +7,15 @@ FROM ubuntu:latest
 
 # These commands copy your files into the specified directory in the image
 # and set that as the working location
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+#COPY . /usr/src/myapp
+WORKDIR /root
 
 # run init commands
-RUN apt-get update -y
-RUN apt-get install -y build-essential python3 pip
-RUN pip install conan
-RUN conan install .
+RUN apt update -y
+RUN apt upgrade -y libssl-dev
+RUN apt install -y build-essential python3 pip git cmake libboost-dev
+#RUN pip install conan
+#RUN conan install .
 
 # This command runs your application, comment out this line to compile only
 #CMD ["./myapp"]

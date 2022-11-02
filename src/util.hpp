@@ -1,5 +1,7 @@
 #pragma once
 
+#include <optional>
+
 enum Status {
     OK,
     ERR_GENERAL,
@@ -9,5 +11,15 @@ enum Status {
 template<typename T>
 struct Result {
     Status status;
-    T data;
+    std::optional<T> data;
+
+    operator bool() const
+    {
+        return this->status == Status::OK;
+    }
+
+    T&& get()
+    {
+        return std::move(data).value();
+    }
 };

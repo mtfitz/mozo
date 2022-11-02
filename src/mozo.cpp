@@ -3,13 +3,13 @@
 #include <string>
 #include <unistd.h>
 #include <vector>
-#include <benc.hpp>
+#include <benc/benc.hpp>
 
 #include "mozo.hpp"
 
 using namespace std;
 
-vector<pair<string, string>> parse_env_vars()
+/*vector<pair<string, string>> parse_env_vars()
 {
     vector<pair<string, string>> env_vars;
     size_t i = 0;
@@ -22,12 +22,12 @@ vector<pair<string, string>> parse_env_vars()
         i++;
     }
     return environ_vars;
-}
+}*/
 
 int main(int argc, char** argv)
 {
     // prepare input file stream
-    vector<benc::byte_t> src;
+    vector<benc::byte> src;
     ifstream torrent_file("linuxmint.torrent", std::ifstream::binary | std::ifstream::ate);
     if (!torrent_file) {
         logger("Invalid input file", ERROR);
@@ -39,13 +39,22 @@ int main(int argc, char** argv)
     torrent_file.seekg(0);
     torrent_file.read((char *) src.data(), file_size);
 
-    TrackerManager tm("tracker.opentrackr.org", 1337);
+    /*TrackerManager tm("tracker.opentrackr.org", 1337);
     if (!tm.connect()) {
         logger("Terminating abnormally...");
         exit(0);
     }
 
-    tm.announce(src);
+    tm.announce(src);*/
+
+    // parse torrent file
+    auto t = benc::decode(src);
+    assert(t.has_value());
+    auto t_val = t.value();
+    assert(t_val.type() == benc::BencType::DICT);
+
+    //TrackerManager tm("tracker.opentracker.org", "1337");
+    //auto r = tm.get()
 
     return 0;
 }

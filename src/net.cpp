@@ -99,7 +99,7 @@ Result<Connection<TCP>> tcp_connect(Host& host)
 
     socket.connect(endpoint);
 
-    return {OK, Connection<TCP>(socket)};
+    return {OK, make_optional<Connection<TCP>>(socket)};
 }
 
 void tcp_disconnect(Connection<TCP>& conn)
@@ -115,23 +115,24 @@ void tcp_disconnect(Connection<TCP>& conn)
 
 bool tcp_send(Connection<TCP>& conn, std::vector<uint8_t>& msg)
 {
-    conn.socket.send(msg);
+    conn.socket.send(buffer(msg));
+    return true;
 }
 
-optional<std::vector<uint8_t>> tcp_recv(int sd, size_t n)
+Result<std::vector<uint8_t>> tcp_recv(Connection<TCP>& conn, size_t n)
 {
     std::vector<uint8_t> b(n);
 
-    size_t i = 0;
-    while (i < n)
-    {
-        ssize_t j = recv(sd, b.data() + i, n - i, 0);
-        if (j < 0)
-            return {};
-        i += j;
-    }
+    // size_t i = 0;
+    // while (i < n)
+    // {
+    //     ssize_t j = recv(sd, b.data() + i, n - i, 0);
+    //     if (j < 0)
+    //         return {};
+    //     i += j;
+    // }
 
-    return b;
+    return {OK, b};
 }
 
 Result<Connection<UDP>> udp_connect(Host& host) { throw std::logic_error("udp_connect() is unimplemented"); }
